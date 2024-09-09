@@ -93,12 +93,12 @@
         }
 
         .main-content>li {
-            margin-top: 40px;
+            margin-top: 100px;
         }
 
         /* 视频组简介 */
         .introduction {
-            margin-top: 180px;
+            margin-top: 120px;
         }
 
         .introduction .section-content {
@@ -107,9 +107,48 @@
             text-indent: 2em;
         }
 
+        /* 视频组组员作品 */
+        .works {
+            overflow: hidden;
+        }
+
+        .works .section-content li {
+            float: left;
+            width: 320px;
+            margin-right: 40px;
+            margin-bottom: 40px;
+        }
+
+        .works .section-content li:nth-child(n+4) {
+            margin-bottom: 0px;
+        }
+
+        .works .section-content li:nth-child(4n) {
+            margin-right: 0px;
+        }
+
+        .works .section-content a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            color: #000;
+            text-align: center;
+        }
+
+        .works .section-content a:hover {
+            color: #da0404;
+        }
+
+        .works .section-content img {
+            width: 100%;
+            border-radius: 10px;
+
+        }
+
+
         /* 视频组历代组长上任公告 */
         .announcement-of-leaders {
-            margin-top: 60px;
             overflow: hidden;
         }
 
@@ -127,8 +166,7 @@
 
         .announcement-of-leaders .section-content .current-leader {
             float: left;
-            width: 300px;
-            height: 1200px;
+            width: 250px;
             padding: 16px;
             background-color: #fdfdfd;
             border-radius: 20px;
@@ -139,6 +177,7 @@
         .announcement-of-leaders .section-content .current-leader img {
             width: 100%;
             border-radius: 50%;
+            box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.2);
         }
 
         .announcement-of-leaders .section-content .past-leaders {
@@ -146,30 +185,40 @@
         }
 
         .announcement-of-leaders .section-content .past-leaders li {
-            display: inline-block;
-            width: 800px;
-            height: 400px;
+            width: 1110px;
             padding: 16px;
             background-color: #fdfdfd;
             border-radius: 20px;
             box-shadow: 0px 0px 3px 3px rgba(255, 0, 0, 0.2);
             margin: 5px;
+            margin-bottom: 40px;
+            overflow: hidden;
         }
 
         .announcement-of-leaders .section-content .past-leaders .avatar-and-name {
-            display: inline-block;
-            height: 50%;
-            margin-right: 30px;
-            /* margin-bottom: 40px; */
+            float: right;
+            height: 200px;
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+
+        .announcement-of-leaders .section-content .past-leaders .content {
+            float: left;
+            width: 888px;
         }
 
         .announcement-of-leaders .section-content .past-leaders .avatar-and-name img {
-            height: 100%;
+            height: 80%;
             border-radius: 50%;
             box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.2);
         }
-        .announcement-of-leaders .section-content .past-leaders .avatar-and-name p{
-            display: inline-block;
+
+        /* 加入我们 */
+        .join-us {
+            background-color: rgba(255, 152, 152, 0.7);
+            padding: 15px;
+            color: #fff;
+            text-align: center;
         }
     </style>
 </head>
@@ -203,6 +252,36 @@
             </div>
         </li>
         <li>
+            <div class="works">
+                <div class="section-title">
+                    <h2>视频组组员作品</h2>
+                </div>
+                <div class="section-content">
+                    <ul>
+                        <li><a href="https://www.bilibili.com/video/BV12V4y1F7j9/?spm_id_from=333.999.0.0&vd_source=f5bba81ca8b73b2852e36b66ab1dc349"
+                                target="_blank"><img src="images/1.avif" alt="">What are you
+                                doing!(魔性剪辑）</a></li>
+                        <li><a href="https://www.bilibili.com/video/BV1zH4y1Y7Ht/?spm_id_from=333.999.0.0&vd_source=f5bba81ca8b73b2852e36b66ab1dc349"
+                                target="_blank"><img src="images/2.webp" alt="">【晒你2024拜年祭单品】来自新世界</a></li>
+                        <li><a href="https://www.bilibili.com/video/BV1jy421h7Nk/?spm_id_from=333.999.0.0&vd_source=f5bba81ca8b73b2852e36b66ab1dc349"
+                                target="_blank"><img src="images/3.avif" alt="">【晒你2024拜年祭单品】思 考 过
+                                载</a></li>
+                        <li><a href="https://www.bilibili.com/video/BV1Vy421h7M6/?spm_id_from=333.999.0.0&vd_source=f5bba81ca8b73b2852e36b66ab1dc349"
+                                target="_blank"><img src="images/4.avif" alt="">【86/梅菲斯特】纵使硝烟分离两人</a></li>
+                        <li><a href="https://www.bilibili.com/video/BV1Mm41197dR/?spm_id_from=333.999.0.0&vd_source=f5bba81ca8b73b2852e36b66ab1dc349"
+                                target="_blank"><img src="images/5.avif" alt="">【魔法少女小圆/MAD】不爱我，就去死吧（重制版）</a></li>
+                        <li><a href="https://www.bilibili.com/video/BV1Zw411Y7X2/?spm_id_from=333.999.0.0&vd_source=f5bba81ca8b73b2852e36b66ab1dc349"
+                                target="_blank"><img src="images/6.avif" alt="">【西电Shining动漫社/MEP】Baby you</a></li>
+                        <li><a href="https://www.bilibili.com/video/BV1eg41197wg/?spm_id_from=333.999.0.0&vd_source=f5bba81ca8b73b2852e36b66ab1dc349"
+                                target="_blank"><img src="images/7.avif" alt="">【MIKU/魔法未来2018/MMD】Hand in Hand</a></li>
+                        <li><a href="https://www.bilibili.com/video/BV1NF4m1M7tD/?spm_id_from=333.999.0.0&vd_source=f5bba81ca8b73b2852e36b66ab1dc349"
+                                target="_blank"><img src="images/8.avif" alt="">【托尔 ·
+                                艾露玛】ねぇねぇねぇ。（龙女仆版呐呐呐。）</a></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li>
             <div class="announcement-of-leaders">
                 <div class="section-title">
                     <h2>视频组历代组长上任公告</h2>
@@ -231,80 +310,114 @@
                                     <img src="images/zhazha.JPG" alt="渣渣">
                                     <h3>渣渣</h3>
                                 </div>
-                                <p>大家好，我是渣渣，今年我从乌鸦的手中接下了视频组。经过我与乌鸦、令君的讨论，我们决定今年正式启动视频组，并开始正式招新。 视频组的全名是Shining ACG
-                                    宣传部视频组，简称视频组，别称Shining ACG Video
-                                    Studio，我们隶属于宣传部，以产出为主，通过视频的方式来宣传Shining。在接下来的一年中，我和令君计划将在招新后展开每周部活并进行一定的教学，同时还会尝试一些新的企划。
-                                    如果有什么想做的企划，都可以提出来，大家一起商量给建议。
-                                    目前已有企划：
-                                </p>
-                                <p>1.每届的社团宣传</p>
-                                <p>2.每届晒你祭视频录制及剪辑</p>
-                                <p>目前可能有的企划</p>
-                                <p>1.迎新后计划组内每月产出至少一个MAD/AMV</p>
-                                <p>2.与模玩部合作的模型定格动画</p>
-                                <p>3.与cos部和宅舞部合作的月刊</p>
+                                <div class="content">
+                                    <p>大家好，我是渣渣，今年我从乌鸦的手中接下了视频组。经过我与乌鸦、令君的讨论，我们决定今年正式启动视频组，并开始正式招新。 视频组的全名是Shining ACG
+                                        宣传部视频组，简称视频组，别称Shining ACG Video
+                                        Studio，我们隶属于宣传部，以产出为主，通过视频的方式来宣传Shining。在接下来的一年中，我和令君计划将在招新后展开每周部活并进行一定的教学，同时还会尝试一些新的企划。
+                                        如果有什么想做的企划，都可以提出来，大家一起商量给建议。
+                                        目前已有企划：
+                                    </p>
+                                    <p>1.每届的社团宣传</p>
+                                    <p>2.每届晒你祭视频录制及剪辑</p>
+                                    <p>目前可能有的企划:</p>
+                                    <p>1.迎新后计划组内每月产出至少一个MAD/AMV</p>
+                                    <p>2.与模玩部合作的模型定格动画</p>
+                                    <p>3.与cos部和宅舞部合作的月刊</p>
+                                </div>
                             </li>
                             <li>
                                 <div class="avatar-and-name">
                                     <img src="images/ziling.JPG" alt="梓泠">
                                     <h3>梓泠</h3>
                                 </div>
-                                大家好，我是梓泠，今年我从渣哥的手中接下了视频组。 视频组的全名是Shining ACG 宣传部视频组，简称视频组，别称Shining ACG Video
-                                Studio，我们隶属于宣传部，以产出为主，通过视频的方式来宣传Shining。在接下来的一年中，教学活动应该不会变，包括但不限于AMV,VLOG拍摄及剪辑,MMD等等
-                                （让大家成为全能工具人）（划掉）如果有什么想做的企划，都可以提出来，大家一起商量给建议。 球球大家了！！！！！！ 救救孩子吧呜呜呜呜呜
+                                <div class="content">
+                                    <p>大家好，我是梓泠，今年我从渣哥的手中接下了视频组。 </p>
+                                    <p>视频组的全名是Shining ACG 宣传部视频组，简称视频组，别称Shining ACG Video
+                                        Studio，我们隶属于宣传部，以产出为主，通过视频的方式来宣传Shining。</p>
+                                    <p>在接下来的一年中，教学活动应该不会变，包括但不限于AMV,VLOG拍摄及剪辑,MMD等等
+                                        （让大家成为全能工具人）（划掉）如果有什么想做的企划，都可以提出来，大家一起商量给建议。 球球大家了！！！！！！ 救救孩子吧呜呜呜呜呜
+                                    </p>
+                                </div>
                             </li>
                             <li>
                                 <div class="avatar-and-name">
                                     <img src="images/smh.JPG" alt="书名号">
                                     <h3>书名号</h3>
                                 </div>
-                                大家好, 我是书名号, 今年我从 z0 的手中接下了视频组. 视频组的全名是 Shining ACG 宣传部视频组, 简称视频组, 别称 Shining ACG Video
-                                Studio, 我们隶属于宣传部, 以产出为主,
-                                通过视频的方式来宣传Shining. 组内主要负责冬季拜年祭视频的策划制作, 夏季晒你祭相关影像资料的收集与剪裁, 与其他部门展开的合作企划 (社刊制作,
-                                COS/宅舞/轻音视频, 模型定格动画), 以及内部不定期的一些 MAD 活动.
-                                在接下来的一个学期, 部活的形式会延续传统, 开展视频剪辑基础的教学活动. 我们前期会努力在较短的时间内让大家学会与剪辑相关的一些基本操作 (工具人快速养成计划),
-                                并穿插一些视频相关的理论知识; 后期就会比较专题化,
-                                从一些细分的角度讲解相关的内容 (如转场相关, 氛围渲染等), 也有可能会拉前辈讲讲 VLOG, MMD, 也欢迎大家在群里开展相关的技术交流. 作为一个兴趣组织,
-                                请大家畅所欲言, 多水水群就好(迫真).
-                                如果有什么想法或问题都可以提出来, 大家一起商量给建议, 俺做视频的水平其实一般, 但是群里还是有不少前辈的. 我的主要生活都在代码搬砖中度过,
-                                如果不会写代码也可以找我(划掉) 总之, 新的一年也请大家多多担待, 请多关照~
+                                <div class="content">
+                                    <p>大家好, 我是书名号, 今年我从 z0 的手中接下了视频组. 视频组的全名是 Shining ACG 宣传部视频组, 简称视频组, 别称 Shining ACG
+                                        Video
+                                        Studio, 我们隶属于宣传部, 以产出为主,
+                                        通过视频的方式来宣传Shining. 组内主要负责冬季拜年祭视频的策划制作, 夏季晒你祭相关影像资料的收集与剪裁, 与其他部门展开的合作企划 (社刊制作,
+                                        COS/宅舞/轻音视频, 模型定格动画), 以及内部不定期的一些 MAD 活动.
+                                    </p>
+                                    <p>在接下来的一个学期, 部活的形式会延续传统, 开展视频剪辑基础的教学活动. 我们前期会努力在较短的时间内让大家学会与剪辑相关的一些基本操作
+                                        (工具人快速养成计划),
+                                        并穿插一些视频相关的理论知识; 后期就会比较专题化,
+                                        从一些细分的角度讲解相关的内容 (如转场相关, 氛围渲染等), 也有可能会拉前辈讲讲 VLOG, MMD, 也欢迎大家在群里开展相关的技术交流.
+                                        作为一个兴趣组织,
+                                        请大家畅所欲言, 多水水群就好(迫真).
+                                    </p>
+                                    <p>如果有什么想法或问题都可以提出来, 大家一起商量给建议, 俺做视频的水平其实一般, 但是群里还是有不少前辈的. 我的主要生活都在代码搬砖中度过,
+                                    </p>
+                                    <p>如果不会写代码也可以找我(划掉) 总之, 新的一年也请大家多多担待, 请多关照~</p>
+                                </div>
                             </li>
                             <li>
                                 <div class="avatar-and-name">
                                     <img src="images/wuzhi.JPG" alt="掌控-物质">
                                     <h3>掌控-物质</h3>
                                 </div>
-                                大家好, 我是掌控-物质, 今年我从书名号的手中接下了视频组。 视频组的全名是 Shining ACG 宣传部视频组, 简称视频组, 别称 Shining ACG Video
-                                Studio, 我们隶属于宣传部, 以产出为主,
-                                通过视频的方式来宣传Shining. 组内主要负责冬季拜年祭视频的策划制作, 夏季晒你祭相关影像资料的收集与剪裁, 与其他部门展开的合作企划 (社刊制作,
-                                COS/宅舞/轻音视频, 模型定格动画), 以及内部不定期的一些 MAD 活动。
-                                在接下来的一个学期，部活依然会如同以往展开一些教学活动，这个学期的教学部分依然由我们的书名号gg来完成🥰，当然我也会负责一部分的内容。教学内容可能会略有调整，感觉上个学期过于侧重pr了，这学期应该会增加一些ae的讲解，作为近几代组长中少有的mmder，我大概也会教一些mmd相关（？
-                                作为一个兴趣组织，我们其实没有什么社员必须要出作品的硬性规定，大家多多水群就好（群里真的太安静了，速速来个人救救）。如果有什么想法或问题都可以提出来, 大家一起商量给建议,
-                                目前我个人还是以mmd为主，mad做的极少，但是群里还是有不少前辈大佬的，相信各位的问题也一定能在他们那里得到解决（迫真）。 新しい一年もどうぞ宜しくお愿いいたします。
+                                <div class="content">
+                                    <p>大家好, 我是掌控-物质, 今年我从书名号的手中接下了视频组。 视频组的全名是 Shining ACG 宣传部视频组, 简称视频组, 别称 Shining ACG
+                                        Video
+                                        Studio, 我们隶属于宣传部, 以产出为主,
+                                        通过视频的方式来宣传Shining. 组内主要负责冬季拜年祭视频的策划制作, 夏季晒你祭相关影像资料的收集与剪裁, 与其他部门展开的合作企划 (社刊制作,
+                                        COS/宅舞/轻音视频, 模型定格动画), 以及内部不定期的一些 MAD 活动。
+                                    </p>
+                                    <p>在接下来的一个学期，部活依然会如同以往展开一些教学活动，这个学期的教学部分依然由我们的书名号gg来完成🥰，当然我也会负责一部分的内容。教学内容可能会略有调整，感觉上个学期过于侧重pr了，这学期应该会增加一些ae的讲解，作为近几代组长中少有的mmder，我大概也会教一些mmd相关（？
+                                        作为一个兴趣组织，我们其实没有什么社员必须要出作品的硬性规定，大家多多水群就好（群里真的太安静了，速速来个人救救）。如果有什么想法或问题都可以提出来,
+                                        大家一起商量给建议,>
+                                    </p>
+                                    <p>目前我个人还是以mmd为主，mad做的极少，但是群里还是有不少前辈大佬的，相信各位的问题也一定能在他们那里得到解决（迫真）。</p>
+                                    <p> 新しい一年もどうぞ宜しくお愿いいたします。</p>
+                                </div>
                             </li>
                             <li>
                                 <div class="avatar-and-name">
                                     <img src="images/gachi.JPG" alt="ガチ恋">
                                     <h3>ガチ恋</h3>
                                 </div>
-                                吾应命运的召唤降临此间，目睹晒你的无上荣光，遂与物质签订契约，即日司掌视频组之威仪！咳咳……大家好，我是ガチ恋，今年我从物质手中接下了视频组，接下来的一年里还请各位多多关照！
-                                Shining ACG Video
-                                Studio，即晒你动漫社视频组，隶属于宣传部。视频组源于晒你动漫社兴趣交流里群。几年前，晒你只有这样一个里群能给予大家一个交流视频剪辑的平台，而这是无法满足晒你发展需要的。于是在乌鸦、渣渣、令君的带领下，怀揣着“拉人一起剪视频、一起分享”的理想的视频组成立了。如今，视频组又历经梓泠、书名号、掌控-物质三代组长的发展，创造了许多优秀的产出，最终传到了我的手中。
-                                视频组主要负责社内影视后期及数字媒体技术相关的ACG文化创作，包括但不限于MAD、MMD、PV制作，书刊制作与印刷，以及各类实用工具的发掘与运用。
-                                我们每年都有几项固定企划：
-                                1.晒你拜年祭。
-                                2.社团社刊 。
-                                3.晒你祭视频录制、直播推流及视频剪辑。
-                                希望大家多多参与哦~
-                                此外，MEP企划以及与动漫研合作的晒你动画大赏宣传视频也已经在路上了。我们在努力完善自身内容产出的同时也会积极为其他部门提供技术支持。大家有什么对视频组好的建议与想法都可以提出哦～
-                                视频组没有门槛，只要有东西就可以拿出来分享，拿出来聊。希望大家在这里玩得开心！
+                                <div class="content">
+                                    <p>吾应命运的召唤降临此间，目睹晒你的无上荣光，遂与物质签订契约，即日司掌视频组之威仪！咳咳……大家好，我是ガチ恋，今年我从物质手中接下了视频组，接下来的一年里还请各位多多关照！
+                                    </p>
+                                    <p>Shining ACG Video
+                                        Studio，即晒你动漫社视频组，隶属于宣传部。视频组源于晒你动漫社兴趣交流里群。几年前，晒你只有这样一个里群能给予大家一个交流视频剪辑的平台，而这是无法满足晒你发展需要的。于是在乌鸦、渣渣、令君的带领下，怀揣着“拉人一起剪视频、一起分享”的理想的视频组成立了。如今，视频组又历经梓泠、书名号、掌控-物质三代组长的发展，创造了许多优秀的产出，最终传到了我的手中。
+                                        视频组主要负责社内影视后期及数字媒体技术相关的ACG文化创作，包括但不限于MAD、MMD、PV制作，书刊制作与印刷，以及各类实用工具的发掘与运用。
+                                    </p>
+                                    <p>我们每年都有几项固定企划：</p>
+                                    <p>1.晒你拜年祭。</p>
+                                    <p>2.社团社刊 。</p>
+                                    <p>3.晒你祭视频录制、直播推流及视频剪辑。</p>
+                                    <p>希望大家多多参与哦~</p>
+                                    <p>此外，MEP企划以及与动漫研合作的晒你动画大赏宣传视频也已经在路上了。我们在努力完善自身内容产出的同时也会积极为其他部门提供技术支持。大家有什么对视频组好的建议与想法都可以提出哦～
+                                        视频组没有门槛，只要有东西就可以拿出来分享，拿出来聊。希望大家在这里玩得开心！
+                                    </p>
+                                </div>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </li>
+        <li></li>
     </ul>
+    <div class="join-us">
+        <div class="section-title">
+            <h2>加入我们</h2>
+        </div>
+        请联系组长QQ：3181259291
+    </div>
     <!-- <a href="markdown-display-for-MAD.md-by-gaoleng.html" target="_blank">MAD.md</a> -->
 </body>
 
