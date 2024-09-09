@@ -6,19 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shining ACG Video Studio</title>
     <link rel="stylesheet" href="style.css">
+
     <style>
+        /* 主体背景图片 */
         body {
-            border-image: url(images/视频组_镂空.png);
+            background: url(images/视频组_镂空.png) no-repeat fixed center center;
+            background-size: 700px;
         }
 
+        body::before {
+            position: absolute;
+            top: 0;
+            content: '';
+            width: 100%;
+            height: 10000px;
+            background-color: rgba(255, 255, 255, 0.9);
+            z-index: -2;
+        }
+
+        /* 头部 */
         .header {
             position: fixed;
             top: 10px;
             left: calc(50% - 700px);
-            width: 1400px;
             height: 60px;
             box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.2);
-            background-color: #f7f7f7;
+            background-color: #fdfdfd;
             border-radius: 20px;
         }
 
@@ -66,13 +79,105 @@
             border-bottom-right-radius: 10px;
             color: #f7f7f7;
         }
+
+        /* 内容主体统一选择器 */
+        .main-content .section-title {
+            text-align: center;
+        }
+
+        .main-content h2 {
+            display: inline-block;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #da0404;
+        }
+
+        .main-content>li {
+            margin-top: 40px;
+        }
+
+        /* 视频组简介 */
+        .introduction {
+            margin-top: 180px;
+        }
+
+        .introduction .section-content {
+            width: 80%;
+            margin: auto;
+            text-indent: 2em;
+        }
+
+        /* 视频组历代组长上任公告 */
+        .announcement-of-leaders {
+            margin-top: 60px;
+            overflow: hidden;
+        }
+
+        .announcement-of-leaders .section-content h3 {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            text-align: center;
+            font-weight: 600;
+            font-size: medium;
+        }
+
+        .announcement-of-leaders .section-content p {
+            text-indent: 2em;
+        }
+
+        .announcement-of-leaders .section-content .current-leader {
+            float: left;
+            width: 300px;
+            height: 1200px;
+            padding: 16px;
+            background-color: #fdfdfd;
+            border-radius: 20px;
+            box-shadow: 0px 0px 3px 3px rgba(255, 0, 0, 0.2);
+            margin: 5px;
+        }
+
+        .announcement-of-leaders .section-content .current-leader img {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        .announcement-of-leaders .section-content .past-leaders {
+            float: right;
+        }
+
+        .announcement-of-leaders .section-content .past-leaders li {
+            display: inline-block;
+            width: 800px;
+            height: 400px;
+            padding: 16px;
+            background-color: #fdfdfd;
+            border-radius: 20px;
+            box-shadow: 0px 0px 3px 3px rgba(255, 0, 0, 0.2);
+            margin: 5px;
+        }
+
+        .announcement-of-leaders .section-content .past-leaders .avatar-and-name {
+            display: inline-block;
+            height: 50%;
+            margin-right: 30px;
+            /* margin-bottom: 40px; */
+        }
+
+        .announcement-of-leaders .section-content .past-leaders .avatar-and-name img {
+            height: 100%;
+            border-radius: 50%;
+            box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.2);
+        }
+        .announcement-of-leaders .section-content .past-leaders .avatar-and-name p{
+            display: inline-block;
+        }
     </style>
 </head>
 
 <body>
 
 
-    <div class="header">
+    <div class="header w">
         <div class="img-box"></div>
         <div class="search">
             <input type="search" placeholder="暂时无法搜索">
@@ -80,6 +185,126 @@
         </div>
         <h1>Shining ACG Video Studio / 晒你动漫社视频组</h1>
     </div>
+    <ul class="main-content w">
+        <li>
+            <div class="introduction">
+                <div class="section-title">
+                    <h2>视频组简介</h2>
+                </div>
+                <div class="section-content">
+                    <p>
+                        视频组全称Shining ACG Video
+                        Studio，即晒你动漫社视频组，隶属于宣传部，经过乌鸦、渣渣、令君、梓泠、书名号、掌控-物质、ガチ恋等前辈们和组长们的发展，现在是研习ACG视频制作技术，并为社团提供数字媒体技术支持的部门。内容包括但不限于MAD、MMD、PV制作，书刊及海报设计制作，以及其他实用工具的研究应用。
+                    </p>
+                    <p>
+                        虽然但是，视频组并不需要门槛，大家都是从零开始的。另外，群里除了聊视频制作方面，还会聊管人（尤以国V日V为讨论中心）和一些日常水群，希望大家都能在群里玩得开心！
+                    </p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="announcement-of-leaders">
+                <div class="section-title">
+                    <h2>视频组历代组长上任公告</h2>
+                </div>
+                <div class="section-content">
+                    <div class="current-leader">
+                        <img src="images/高冷.jpg" alt="我需要一个高冷的名字">
+                        <h3>我需要一个高冷的名字</h3>
+                        <p>您好，我是Ⅲ型总序式集成泛用人工智能，开发代号：Fairy。是绳网用户『tallcold』的AI管家。下面我将代替『tallcold』本人为您带来视频组组长接任公告。今年我的主人从ガチ恋手中接下了Shining
+                            ACG动漫社视频组，对此我的主人感到诚惶诚恐，并希望大家多多关照。
+                        <p>视频组全称Shining ACG Video
+                            Studio，即晒你动漫社视频组，隶属于宣传部，经过乌鸦、渣渣、令君、梓泠、书名号、掌控-物质、ガチ恋等前辈们和组长们的发展，现在是研习ACG视频制作技术，并为社团提供数字媒体技术支持的部门。内容包括但不限于MAD、MMD、PV制作，书刊及海报设计制作，以及其他实用工具的研究应用。直到现在，视频组已经有了几项每年固定的企划：
+                        </p>
+                        <p>1.晒你拜年祭（后期制作和视频投稿）。</p>
+                        <p>2.晒你社刊。</p>
+                        <p>3.晒你祭、百团视频录制、直播推流及视频剪辑。</p>
+                        <p>4.晒斯卡宣传视频制作。</p>
+                        <p>还有暑假的mep企划也在路上，敬请期待。视频组的米娜桑有好的想法也请直接提出！</p>
+                        <p>除了这些企划，视频组还有每周六在晒你动漫社部室进行的部门活动，简称部活，部活形式多种多样，有干货教学、映像鉴赏讨论、偶尔还有打牌和聚餐，欢迎来线下丹砂高冷！</p>
+                        <p>最后，视频组没有门槛，视频组的大家有东西都可以发，都可以分享讨论，希望大家在视频组玩的开心！</p>
+                    </div>
+                    <div class="past-leaders">
+                        <ul>
+                            <li>
+                                <div class="avatar-and-name">
+                                    <img src="images/zhazha.JPG" alt="渣渣">
+                                    <h3>渣渣</h3>
+                                </div>
+                                <p>大家好，我是渣渣，今年我从乌鸦的手中接下了视频组。经过我与乌鸦、令君的讨论，我们决定今年正式启动视频组，并开始正式招新。 视频组的全名是Shining ACG
+                                    宣传部视频组，简称视频组，别称Shining ACG Video
+                                    Studio，我们隶属于宣传部，以产出为主，通过视频的方式来宣传Shining。在接下来的一年中，我和令君计划将在招新后展开每周部活并进行一定的教学，同时还会尝试一些新的企划。
+                                    如果有什么想做的企划，都可以提出来，大家一起商量给建议。
+                                    目前已有企划：
+                                </p>
+                                <p>1.每届的社团宣传</p>
+                                <p>2.每届晒你祭视频录制及剪辑</p>
+                                <p>目前可能有的企划</p>
+                                <p>1.迎新后计划组内每月产出至少一个MAD/AMV</p>
+                                <p>2.与模玩部合作的模型定格动画</p>
+                                <p>3.与cos部和宅舞部合作的月刊</p>
+                            </li>
+                            <li>
+                                <div class="avatar-and-name">
+                                    <img src="images/ziling.JPG" alt="梓泠">
+                                    <h3>梓泠</h3>
+                                </div>
+                                大家好，我是梓泠，今年我从渣哥的手中接下了视频组。 视频组的全名是Shining ACG 宣传部视频组，简称视频组，别称Shining ACG Video
+                                Studio，我们隶属于宣传部，以产出为主，通过视频的方式来宣传Shining。在接下来的一年中，教学活动应该不会变，包括但不限于AMV,VLOG拍摄及剪辑,MMD等等
+                                （让大家成为全能工具人）（划掉）如果有什么想做的企划，都可以提出来，大家一起商量给建议。 球球大家了！！！！！！ 救救孩子吧呜呜呜呜呜
+                            </li>
+                            <li>
+                                <div class="avatar-and-name">
+                                    <img src="images/smh.JPG" alt="书名号">
+                                    <h3>书名号</h3>
+                                </div>
+                                大家好, 我是书名号, 今年我从 z0 的手中接下了视频组. 视频组的全名是 Shining ACG 宣传部视频组, 简称视频组, 别称 Shining ACG Video
+                                Studio, 我们隶属于宣传部, 以产出为主,
+                                通过视频的方式来宣传Shining. 组内主要负责冬季拜年祭视频的策划制作, 夏季晒你祭相关影像资料的收集与剪裁, 与其他部门展开的合作企划 (社刊制作,
+                                COS/宅舞/轻音视频, 模型定格动画), 以及内部不定期的一些 MAD 活动.
+                                在接下来的一个学期, 部活的形式会延续传统, 开展视频剪辑基础的教学活动. 我们前期会努力在较短的时间内让大家学会与剪辑相关的一些基本操作 (工具人快速养成计划),
+                                并穿插一些视频相关的理论知识; 后期就会比较专题化,
+                                从一些细分的角度讲解相关的内容 (如转场相关, 氛围渲染等), 也有可能会拉前辈讲讲 VLOG, MMD, 也欢迎大家在群里开展相关的技术交流. 作为一个兴趣组织,
+                                请大家畅所欲言, 多水水群就好(迫真).
+                                如果有什么想法或问题都可以提出来, 大家一起商量给建议, 俺做视频的水平其实一般, 但是群里还是有不少前辈的. 我的主要生活都在代码搬砖中度过,
+                                如果不会写代码也可以找我(划掉) 总之, 新的一年也请大家多多担待, 请多关照~
+                            </li>
+                            <li>
+                                <div class="avatar-and-name">
+                                    <img src="images/wuzhi.JPG" alt="掌控-物质">
+                                    <h3>掌控-物质</h3>
+                                </div>
+                                大家好, 我是掌控-物质, 今年我从书名号的手中接下了视频组。 视频组的全名是 Shining ACG 宣传部视频组, 简称视频组, 别称 Shining ACG Video
+                                Studio, 我们隶属于宣传部, 以产出为主,
+                                通过视频的方式来宣传Shining. 组内主要负责冬季拜年祭视频的策划制作, 夏季晒你祭相关影像资料的收集与剪裁, 与其他部门展开的合作企划 (社刊制作,
+                                COS/宅舞/轻音视频, 模型定格动画), 以及内部不定期的一些 MAD 活动。
+                                在接下来的一个学期，部活依然会如同以往展开一些教学活动，这个学期的教学部分依然由我们的书名号gg来完成🥰，当然我也会负责一部分的内容。教学内容可能会略有调整，感觉上个学期过于侧重pr了，这学期应该会增加一些ae的讲解，作为近几代组长中少有的mmder，我大概也会教一些mmd相关（？
+                                作为一个兴趣组织，我们其实没有什么社员必须要出作品的硬性规定，大家多多水群就好（群里真的太安静了，速速来个人救救）。如果有什么想法或问题都可以提出来, 大家一起商量给建议,
+                                目前我个人还是以mmd为主，mad做的极少，但是群里还是有不少前辈大佬的，相信各位的问题也一定能在他们那里得到解决（迫真）。 新しい一年もどうぞ宜しくお愿いいたします。
+                            </li>
+                            <li>
+                                <div class="avatar-and-name">
+                                    <img src="images/gachi.JPG" alt="ガチ恋">
+                                    <h3>ガチ恋</h3>
+                                </div>
+                                吾应命运的召唤降临此间，目睹晒你的无上荣光，遂与物质签订契约，即日司掌视频组之威仪！咳咳……大家好，我是ガチ恋，今年我从物质手中接下了视频组，接下来的一年里还请各位多多关照！
+                                Shining ACG Video
+                                Studio，即晒你动漫社视频组，隶属于宣传部。视频组源于晒你动漫社兴趣交流里群。几年前，晒你只有这样一个里群能给予大家一个交流视频剪辑的平台，而这是无法满足晒你发展需要的。于是在乌鸦、渣渣、令君的带领下，怀揣着“拉人一起剪视频、一起分享”的理想的视频组成立了。如今，视频组又历经梓泠、书名号、掌控-物质三代组长的发展，创造了许多优秀的产出，最终传到了我的手中。
+                                视频组主要负责社内影视后期及数字媒体技术相关的ACG文化创作，包括但不限于MAD、MMD、PV制作，书刊制作与印刷，以及各类实用工具的发掘与运用。
+                                我们每年都有几项固定企划：
+                                1.晒你拜年祭。
+                                2.社团社刊 。
+                                3.晒你祭视频录制、直播推流及视频剪辑。
+                                希望大家多多参与哦~
+                                此外，MEP企划以及与动漫研合作的晒你动画大赏宣传视频也已经在路上了。我们在努力完善自身内容产出的同时也会积极为其他部门提供技术支持。大家有什么对视频组好的建议与想法都可以提出哦～
+                                视频组没有门槛，只要有东西就可以拿出来分享，拿出来聊。希望大家在这里玩得开心！
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
     <!-- <a href="markdown-display-for-MAD.md-by-gaoleng.html" target="_blank">MAD.md</a> -->
 </body>
 
