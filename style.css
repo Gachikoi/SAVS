@@ -16,3 +16,216 @@ input {
     width: 1400px;
     margin: 0 auto;
 }
+
+/* 主体背景图片 */
+body {
+    background: url(images/视频组_镂空.png) no-repeat fixed center center;
+    background-size: 700px;
+}
+
+body::before {
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 100%;
+    height: 10000px;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: -2;
+}
+
+/* 头部 */
+.header {
+    position: fixed;
+    top: 10px;
+    left: calc(50% - 700px);
+    height: 60px;
+    box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.2);
+    background-color: #fdfdfd;
+    border-radius: 20px;
+}
+
+.header .img-box {
+    float: right;
+    height: 52px;
+    width: 56px;
+    background-image: url(images/社徽\ 6K.png);
+    background-size: cover;
+    margin: 5px 30px 0px 0px;
+}
+
+.header h1 {
+    float: left;
+    line-height: 60px;
+    margin-left: 30px;
+    font-size: 26px;
+}
+
+.header .search {
+    float: right;
+    width: 300px;
+    height: 60%;
+    margin-top: 13px;
+    margin-right: 40px;
+}
+
+.header .search input {
+    float: left;
+    width: 265px;
+    height: 100%;
+    border: 1px solid red;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 0 15px;
+}
+
+.header .search button {
+    float: left;
+    width: 35px;
+    height: 100%;
+    border: 0;
+    background-color: red;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #f7f7f7;
+}
+
+/* 内容主体统一选择器 */
+.main-content .section-title {
+    text-align: center;
+}
+
+.main-content h2 {
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #da0404;
+}
+
+.main-content>li {
+    margin-top: 100px;
+}
+
+/* 视频组简介 */
+.introduction {
+    margin-top: 120px;
+}
+
+.introduction .section-content {
+    width: 80%;
+    margin: auto;
+    text-indent: 2em;
+}
+
+/* 视频组组员作品 */
+.works {
+    overflow: hidden;
+}
+
+.works .section-content li {
+    float: left;
+    width: 320px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.works .section-content li:nth-child(n+4) {
+    margin-bottom: 0px;
+}
+
+.works .section-content li:nth-child(4n) {
+    margin-right: 0px;
+}
+
+.works .section-content a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+}
+
+.works .section-content a:hover {
+    color: #da0404;
+}
+
+.works .section-content img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+
+/* 视频组历代组长上任公告 */
+.announcement-of-leaders {
+    overflow: hidden;
+}
+
+.announcement-of-leaders .section-content h3 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.announcement-of-leaders .section-content p {
+    text-indent: 2em;
+}
+
+.announcement-of-leaders .section-content .current-leader {
+    float: left;
+    width: 250px;
+    padding: 16px;
+    background-color: #fdfdfd;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px 3px rgba(255, 0, 0, 0.2);
+    margin: 5px;
+}
+
+.announcement-of-leaders .section-content .current-leader img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.announcement-of-leaders .section-content .past-leaders {
+    float: right;
+}
+
+.announcement-of-leaders .section-content .past-leaders li {
+    width: 1110px;
+    padding: 16px;
+    background-color: #fdfdfd;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px 3px rgba(255, 0, 0, 0.2);
+    margin: 5px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.announcement-of-leaders .section-content .past-leaders .avatar-and-name {
+    float: right;
+    height: 200px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.announcement-of-leaders .section-content .past-leaders .content {
+    float: left;
+    width: 888px;
+}
+
+.announcement-of-leaders .section-content .past-leaders .avatar-and-name img {
+    height: 80%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* 加入我们 */
+.join-us {
+    background-color: rgba(255, 152, 152, 0.7);
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+}
